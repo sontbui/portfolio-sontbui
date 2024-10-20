@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { Typography } from '@mui/material';
 import pdf from "../../Assets/../Assets/CV_BUITHANHSON_TESTER_INTERN.pdf";
+// import pdf from "../../Assets/../Assets/CV_BuiThanhSon_Tester.pdf";
+
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";

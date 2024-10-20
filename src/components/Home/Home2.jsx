@@ -1,13 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ReactRoundedImage from "react-rounded-image"
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import avatar from "../../Assets/son.jpg";
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Typography } from "@mui/material";
 
 function Home2() {
   return (
@@ -15,59 +19,37 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <Typography style={{ fontFamily: "Orbitron", fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
+            </Typography>
+            <Typography className="home-about-body" style={{ fontFamily: "Orbitron" }}>
+            I have skills in 
+            <span className="purple">web development, mobile development, and software testing,</span> 
+            with experience using tools like 
+            <span className="purple">Selenium for automation testing.</span>
+            </Typography>
+            <Typography className="home-about-body" style={{ fontFamily: "Orbitron", fontStyle:'italic' }}>
+            <strong>I'm passionate about creating practical applications and always eager to learn and collaborate on new projects.</strong>
+            {/* <span style={{fontStyle:'italic'}} className="purple"> C++, Javascript and Go. </span> */}
+            </Typography>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
+              {/* <ReactRoundedImage image={avatar} /> */}
             </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
+            <Typography variant="h5" style={{ fontFamily: "Orbitron" }}>CONTACT WITH ME</Typography>
+            <Typography style={{ fontFamily: "Orbitron" }}>
               Feel free to <span className="purple">connect </span>with me
-            </p>
+            </Typography>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/sontbui"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +59,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.facebook.com/son.tbui.278"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <AiOutlineFacebook />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/sontbui2783/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +79,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/sontbui/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

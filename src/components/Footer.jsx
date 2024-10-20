@@ -15,10 +15,11 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <Typography variant="h3" style={{fontFamily: "Orbitron" }}>Designed and Developed by Soumyajit Behera</Typography>
+          <Typography variant="h3" style={{fontFamily: "Orbitron" }}>DEVELOP BY SONTBUI</Typography>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+        <Typography variant="h3" style={{fontFamily: "Orbitron" }}>Copyright © {year} SB</Typography>
+          
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
