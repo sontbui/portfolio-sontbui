@@ -44,7 +44,6 @@ function About() {
         <Typography variant="h4" sx={{fontFamily:'Orbitron'}} className="project-heading">
         <strong className="purple">Tools</strong> I use
         </Typography>
-       
         <Toolstack />
 
         <Github />
