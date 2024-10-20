@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <Typography variant="h4" sx={{ fontFamily: 'Orbitron' }} className="project-heading">
+      <Typography variant="h4" sx={{ fontFamily: 'Orbitron', marginBottom:'10px' }} className="project-heading">
         Days I <strong className="purple">Code</strong>
       </Typography>
 
