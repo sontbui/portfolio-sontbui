@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { Typography } from "@mui/material";
 
 function About() {
   return (
@@ -21,9 +22,9 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <Typography variant="h4" sx={{ fontFamily: "Orbitron", fontSize: "2.1em", fontWeight: 600 }}>
               Know Who <strong className="purple">I'M</strong>
-            </h1>
+            </Typography>
             <Aboutcard />
           </Col>
           <Col
@@ -34,15 +35,16 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
 
+        <Typography variant="h4" sx={{fontFamily:'Orbitron'}} className="project-heading">
+          <strong className="purple">Skillset </strong>
+        </Typography>
         <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
+          
+        <Typography variant="h4" sx={{fontFamily:'Orbitron'}} className="project-heading">
+        <strong className="purple">Tools</strong> I use
+        </Typography>
+       
         <Toolstack />
 
         <Github />
