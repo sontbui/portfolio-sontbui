@@ -8,7 +8,7 @@ import { color } from 'framer-motion';
 
 export default function themeTypography(theme) {
     return {
-        fontFamily: `"Londrina Sketch", ${theme?.customization?.fontFamily || 'sans-serif'}`, // Thêm font vào đây
+        fontFamily: `"Londrina Sketch", ${theme?.customization?.fontFamily || 'sans-serif'}`,
         h6: {
             fontWeight: 500,
             color: theme.heading,

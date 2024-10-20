@@ -5,6 +5,7 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
+import {Typography} from "@mui/material";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -14,7 +15,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
+          <Typography variant="h3" style={{fontFamily: "Orbitron" }}>Designed and Developed by Soumyajit Behera</Typography>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SB</h3>

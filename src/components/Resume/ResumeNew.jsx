@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-
+import { Typography } from '@mui/material';
 import pdf from "../../Assets/../Assets/CV_BUITHANHSON_TESTER_INTERN.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -20,7 +20,7 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-       
+
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
@@ -35,8 +35,9 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+            <Typography sx={{ fontFamily: "Orbitron" }}>
+              <AiOutlineDownload /> &nbsp;Download CV
+            </Typography>
           </Button>
         </Row>
       </Container>
