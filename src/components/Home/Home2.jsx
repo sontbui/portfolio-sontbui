@@ -12,24 +12,34 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 function Home2() {
+  const {t} = useTranslation();
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <Typography style={{ fontFamily: "Orbitron", fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+             {t('home.letme')}
+              <span className="purple"> {t('home.intro')}</span> 
+              {t('home.myself')}
             </Typography>
             <Typography className="home-about-body" style={{ fontFamily: "Orbitron" }}>
-            I have skills in 
-            <span className="purple">web development, mobile development, and software testing,</span> 
-            with experience using tools like 
-            <span className="purple">Selenium for automation testing.</span>
+            {t('home.haveSkill')}
+            <span className="purple">
+            {t('home.skill')}
+              </span> 
+              {t('home.withExperience')}
+            <span className="purple">
+            {t('home.tool')}
+              </span>
             </Typography>
             <Typography className="home-about-body" style={{ fontFamily: "Orbitron", fontStyle:'italic' }}>
-            <strong>I'm passionate about creating practical applications and always eager to learn and collaborate on new projects.</strong>
+            <strong>
+            {t('home.passionate')}
+              </strong>
             {/* <span style={{fontStyle:'italic'}} className="purple"> C++, Javascript and Go. </span> */}
             </Typography>
           </Col>
@@ -42,9 +52,15 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <Typography variant="h5" style={{ fontFamily: "Orbitron" }}>CONTACT WITH ME</Typography>
+            <Typography variant="h5" style={{ fontFamily: "Orbitron" }}>
+            {t('home.contact')}
+              </Typography>
             <Typography style={{ fontFamily: "Orbitron" }}>
-              Feel free to <span className="purple">connect </span>with me
+            {t('home.feelFree')} 
+            <span className="purple">
+            {t('home.connect')}
+               </span>
+               {t('home.withme')}
             </Typography>
             <ul className="home-about-social-links">
               <li className="social-icons">

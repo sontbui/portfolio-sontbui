@@ -7,18 +7,23 @@ import {
 } from "react-icons/ai";
 import {Typography} from "@mui/material";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const {t} = useTranslation();
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <Typography variant="h3" style={{fontFamily: "Orbitron" }}>DEVELOP BY SONTBUI</Typography>
+          <Typography variant="h3" style={{fontFamily: "Orbitron" }}>
+            {t('footer.developBy')}
+            
+            </Typography>
         </Col>
         <Col md="4" className="footer-copywright">
-        <Typography variant="h3" style={{fontFamily: "Orbitron" }}>Copyright © {year} SB</Typography>
+        <Typography variant="h3" style={{fontFamily: "Orbitron" }}>{t('footer.copyRight')} © {year} SB</Typography>
           
         </Col>
         <Col md="4" className="footer-body">
