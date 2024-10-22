@@ -17,10 +17,10 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <Typography className="project-heading" style={{ fontFamily: "Orbitron" }}>
+        <Typography className="project-heading" style={{ fontFamily: 'Inter, sans-serif' }}>
           {t('project.my')}  <strong className="purple">{t('project.project')}  </strong>
         </Typography>
-        <Typography style={{ fontFamily: "Orbitron", color: 'white', marginTop: '20px' }}>
+        <Typography style={{ fontFamily: 'Inter, sans-serif', color: 'white', marginTop: '20px' }}>
           {t('project.description')}
         </Typography>
 

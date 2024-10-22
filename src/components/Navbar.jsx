@@ -45,7 +45,7 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" 
           style={{ width: '100%', height: 'auto' }}/> */}
-          <Typography style={{ fontFamily: "Orbitron", fontStyle: 'italic' }}>
+          <Typography style={{ fontFamily: 'Inter, sans-serif', fontStyle: 'italic' }}>
             SONTBUI
           </Typography>
         </Navbar.Brand>
@@ -63,7 +63,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('header.home')}
                 </Typography>
               </Nav.Link>
@@ -75,7 +75,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <AiOutlineUser style={{ marginBottom: "2px" }} /> 
                   {t('header.about')}
                 </Typography>
@@ -88,7 +88,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <AiOutlineFundProjectionScreen
                     style={{ marginBottom: "2px" }}
                   />{" "}
@@ -103,7 +103,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <CgFileDocument style={{ marginBottom: "2px" }} /> {t('header.resume')}
                 </Typography>
               </Nav.Link>
@@ -115,7 +115,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <ImBlog style={{ marginBottom: "2px" }} /> Blogs
                 </Typography>
               </Nav.Link>
@@ -131,8 +131,9 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+            
             <Nav.Item className="fork-btn">
-              <LanguageSetion/>
+              <LanguageSetion />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

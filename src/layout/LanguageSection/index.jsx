@@ -33,31 +33,52 @@ const LanguageSection = () => {
   }, [value]);
   return (
     <>
-      <Box sx={{ borderRadius: '100px' }}>
+      <Box sx={{ borderRadius: '10px' }}>
         <Select
           fullWidth
           value={value}
           onChange={handleChange}
           sx={{
-            height: 38,
-            borderRadius: 100,
+            height: 33,
+            color: 'white',
+            borderRadius: '10px',
+            backgroundColor: '#a24dd386',
             '& .MuiOutlinedInput-notchedOutline': {
-              borderRadius: '100px',
-              borderColor: 'green.300',
-
+              borderColor: '#c770f0',
             },
             '& .MuiSelect-select': {
               background: 'transparent !important',
+              color: 'white', 
+              display: 'flex',
+              alignItems: 'center',
+            },
+            '& .MuiSvgIcon-root': {
+              color: 'white', 
+            },
+            '&:hover':{
+              transform: 'translateY(-2px)',
+              backgroundColor: '#a24dd386',
+              borderColor: '#a24dd386',
             }
           }}
         >
           {language.map(option => (
-            <MenuItem key={option.value} value={option.value}>
-              <div style={{ display: 'flex', alignItems: 'center' }}>
+            <MenuItem
+              key={option.value}
+              value={option.value}
+              sx={{
+                color: 'black', 
+                backgroundColor: 'transparent',
+                '&:hover': {
+                  backgroundColor: '#934cce5e',
+                },
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', fontSize:"0.6em" }}>
                 <img
                   src={option.icon}
                   alt={option.label}
-                  style={{ width: 24, height: 24, marginRight: 8 }}
+                  style={{ width: 20, height: 20, marginRight: 8, fontSize: "1.2em" }}
                 />
                 {option.label}
               </div>
@@ -65,6 +86,7 @@ const LanguageSection = () => {
           ))}
         </Select>
       </Box>
+
     </>
   );
 };

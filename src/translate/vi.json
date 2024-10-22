@@ -32,7 +32,7 @@
   },
   "github": {
     "dayI": "Ngày tôi",
-    "code": "Mã"
+    "code": " code"
   },
   "aboutCard": {
     "hello": "Xin chào mọi người, tôi là ",
@@ -73,8 +73,8 @@
     "tool": "Selenium để kiểm thử tự động",
     "passionate": "Tôi đam mê tạo ra các ứng dụng thực tiễn và luôn háo hức học hỏi và hợp tác trong các dự án mới.",
     "contact": "LIÊN HỆ VỚI TÔI",
-    "feelFree": "Hãy thoải mái",
-    "connect": "kết nối",
+    "feelFree": "Hãy thoải mái ",
+    "connect": "kết nối ",
     "withme": "với tôi"
   }
 }

@@ -24,7 +24,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <Typography variant="h4" sx={{ fontFamily: "Orbitron", fontSize: "2.1em", fontWeight: 600 }}>
+            <Typography variant="h4" sx={{ fontFamily: 'Inter, sans-serif', fontSize: "2.1em", fontWeight: 600 }}>
               {t('about.know')}
               <strong className="purple">{t('about.im')}</strong>
             </Typography>
