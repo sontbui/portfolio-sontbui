@@ -133,7 +133,7 @@ function NavBar() {
             </Nav.Item>
             
             <Nav.Item className="fork-btn">
-              <LanguageSetion/>
+              <LanguageSetion />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
