@@ -6,18 +6,18 @@
     "transaction_history": "Lịch sử giao dịch",
     "setting": "Thiết lập",
     "support": "Hỗ trợ"
-  }, 
+  },
   "header": {
     "project": "Project",
     "about": "About",
     "home": "Home",
     "resume": "Resume"
   },
-  "footer":{
+  "footer": {
     "developBy": "DEVELOP BY SONTBUI",
     "copyRight": "Copyright"
   },
-  "resume":{
+  "resume": {
     "download": "Download CV"
   },
   "project": {
@@ -30,36 +30,42 @@
     "descriptionQuestionModel": "Leverage existing models to retrain a question-and-answer dataset for developing a model capable of responding to user inquiries. The models employed include BERT, PhoBERT, and ViderBerta-xsmall. The training process will involve fine-tuning these models to enhance their ability to accurately answer questions in Vietnamese. By utilizing these robust architectures, the system aims to improve the quality of responses and provide users with reliable information efficiently.",
     "descriptionQuizzApp": "Develop a self-learning app for reviewing Object-Oriented Programming (OOP) topics. Utilize Flutter to create interactive quizzes that help users reinforce their understanding of key concepts. The app will feature various question types, such as multiple choice and true/false, allowing users to engage with the material effectively. Additionally, users can track their progress and receive instant feedback, making learning both fun and informative."
   },
-  "github":{
-    "dayI": "Days I",
-    "code": "Code"
+  "github": {
+    "dayI": "Contribution",
+    "code": " in Github"
   },
   "aboutCard": {
-    "hello": " Hi Everyone, I am ",
+    "hello": "Hello everyone, I am ",
     "name": "Bui Thanh Son",
     "from": "from",
-    "hometown": "Bao Loc City, Viet Nam",
-    "detail": "I am currently employed as a software developer at Juspay.",
-    "subDetail": "I have completed Integrated MSc (IMSc) in Maths and Computing at BIT Mesra.",
-    "careerPath": "Career path:",
-    "shortTerm": "Short-Term:",
-    "detailShortTerm": "Eager to secure a QA/QC Engineer Intern role to gain hands-on experience and deepen my understanding of software testing methodologies. My goal is to enhance my technical testing skills and problem-solving abilities, contributing to the overall quality of the product.",
-    "longTerm": "Long-Term:",
-    "detailLongTerm": "Over the next 3-4 years, I aim to progress to a Senior QA/QC Engineer position, acquiring comprehensive expertise in software testing and leading testing initiatives. My focus will be on delivering effective solutions and driving both team and company success.",
+    "hometown": "Bao Loc City, Vietnam",
+    "detail": "Currently, I am looking for jobs such as ",
+    "or": "or ",
+    "backend": "Back-End Developer ",
+    "tester": "Tester.",
+    "subDetail": "I have completed the high-quality bachelor's program in ",
+    "major": "Computer Science ",
+    "at": "at ",
+    "nameUniversity": "Open University of Ho Chi Minh City",
+    "careerPath": "Career Path:",
+    "shortTerm": "Short-term:",
+    "detailShortTerm": "I aspire to secure a QA/QC internship to gain practical experience and deepen my understanding of software testing methodologies. My goal is to improve my technical testing skills and problem-solving abilities, contributing to the overall quality of the product.",
+    "longTerm": "Long-term:",
+    "detailLongTerm": "In the next 3-4 years, I aim to advance to a senior QA/QC Engineer position, gaining comprehensive knowledge of software testing and leading testing initiatives. I will focus on providing effective solutions and driving the success of both the team and the company.",
     "sologan": "\"Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.\""
   },
-  "about":{
-    "know": "Know who",
+  "about": {
+    "know": "Know who ",
     "im": "I'm",
     "skillSet": "Skillset",
     "tool": "Tools",
     "iUse": " I use"
   },
-  "type":{
+  "type": {
     "tester": "Tester",
     "backend": "Back-End Developer"
   },
-  "home":{
+  "home": {
     "hello": " Hi Everyone !",
     "im": "I'm",
     "careerPath": "Career path:",
@@ -69,13 +75,12 @@
     "myself": "MYSELF",
     "haveSkill": "I have skill in ",
     "skill": "web development, mobile development, and software testing, ",
-    "withExperience":"with experience using tools like ",
+    "withExperience": "with experience using tools like ",
     "tool": "Selenium for automation testing",
     "passionate": "I'm passionate about creating practical applications and always eager to learn and collaborate on new projects.",
     "contact": "CONTACT WITH ME",
     "feelFree": "Feel free to ",
     "connect": "connect",
     "withme": "with me"
-
   }
 }

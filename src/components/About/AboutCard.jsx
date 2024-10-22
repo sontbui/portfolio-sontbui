@@ -11,22 +11,28 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <Box sx={{ textAlign: "justify" }}>
-            <Typography variant="h6" sx={{ fontFamily: 'Orbitron' }}>
+            <Typography variant="h6" sx={{ fontFamily: 'Inter, sans-serif' }}>
               {t('aboutCard.hello')}
               <span className="purple">{t('aboutCard.name')} </span>
               {t('aboutCard.from')} 
               <span className="purple"> {t('aboutCard.hometown')}</span>
             </Typography>
             <br />
-            <Typography variant="h6" sx={{ fontFamily: 'Orbitron' }}>
+            <Typography variant="h6" sx={{ fontFamily: 'Inter, sans-serif' }}>
             {t('aboutCard.detail')} 
+            <span className="purple">{t('aboutCard.backend')} </span>
+            <span>{t('aboutCard.or')} </span>
+            <span className="purple">{t('aboutCard.tester')} </span>
             </Typography>
             <br />
-            <Typography variant="h6" sx={{ fontFamily: 'Orbitron' }}>
+            <Typography variant="h6" sx={{ fontFamily: 'Inter, sans-serif' }}>
             {t('aboutCard.subDetail')} 
+            <span className="purple">{t('aboutCard.major')} </span>
+            <span>{t('aboutCard.at')} </span>
+            <span className="purple">{t('aboutCard.nameUniversity')} </span>
             </Typography>
             <br />
-            <Typography variant="h6" sx={{ fontFamily: 'Orbitron' }}>
+            <Typography variant="h6" sx={{ fontFamily: 'Inter, sans-serif' }}>
               <span className="purple" style={{ fontWeight: 600 }}> {t('aboutCard.careerPath')}</span>
               <br />
               <br/>
