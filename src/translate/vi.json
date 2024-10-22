@@ -31,28 +31,34 @@
     "descriptionQuizzApp": "Phát triển một ứng dụng tự học để ôn tập các chủ đề lập trình hướng đối tượng (OOP). Sử dụng Flutter để tạo ra các bài kiểm tra tương tác giúp người dùng củng cố hiểu biết về các khái niệm chính. Ứng dụng sẽ có nhiều loại câu hỏi, như câu hỏi trắc nghiệm và đúng/sai, cho phép người dùng tham gia hiệu quả với tài liệu. Ngoài ra, người dùng có thể theo dõi tiến trình của mình và nhận phản hồi ngay lập tức, làm cho việc học trở nên thú vị và bổ ích."
   },
   "github": {
-    "dayI": "Ngày tôi",
-    "code": " code"
+    "dayI": "Hoạt động trên",
+    "code": " Github"
   },
   "aboutCard": {
     "hello": "Xin chào mọi người, tôi là ",
     "name": "Bùi Thanh Sơn",
-    "from": "từ",
+    "from": " và tôi đến từ ",
     "hometown": "Thành phố Bảo Lộc, Việt Nam",
-    "detail": "Hiện tôi đang làm việc như một lập trình viên tại Juspay.",
-    "subDetail": "Tôi đã hoàn thành chương trình Thạc sĩ tích hợp (IMSc) về Toán học và Tin học tại BIT Mesra.",
+    "detail": "Hiện tôi đang tìm kiếm các công việc như ",
+    "or": "hoặc ",
+    "backend": "Back-End Developer ",
+    "tester": "Tester.",
+    "subDetail": "Tôi đã hoàn thành chương trình cử nhân chất lượng cao ngành ",
+    "major": " Khoa Học Máy Tính ",
+    "at":" tại đại học ",
+    "nameUniversity": " Mở thành phố Hồ Chí Minh",
     "careerPath": "Lộ trình sự nghiệp:",
     "shortTerm": "Ngắn hạn:",
     "detailShortTerm": "Khao khát có được một vị trí thực tập sinh QA/QC để tích lũy kinh nghiệm thực tế và nâng cao hiểu biết về các phương pháp kiểm thử phần mềm. Mục tiêu của tôi là nâng cao kỹ năng kiểm thử kỹ thuật và khả năng giải quyết vấn đề, đóng góp vào chất lượng tổng thể của sản phẩm.",
     "longTerm": "Dài hạn:",
     "detailLongTerm": "Trong 3-4 năm tới, tôi đặt mục tiêu thăng tiến lên vị trí Kỹ sư QA/QC cao cấp, đạt được kiến thức toàn diện về kiểm thử phần mềm và dẫn dắt các sáng kiến kiểm thử. Tôi sẽ tập trung vào việc cung cấp các giải pháp hiệu quả và thúc đẩy sự thành công của cả đội và công ty.",
-    "sologan": "\"Hôm nay khó khăn, ngày mai sẽ tồi tệ hơn, nhưng ngày kia sẽ có ánh nắng.\""
+    "sologan": "\"Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.\""
   },
   "about": {
     "know": "Giới thiệu về ",
     "im": "Tôi",
     "skillSet": "Kỹ năng",
-    "tool": "Công cụ",
+    "tool": "Công cụ ",
     "iUse": "Tôi sử dụng"
   },
   "type": {

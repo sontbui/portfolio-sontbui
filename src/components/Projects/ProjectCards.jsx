@@ -16,7 +16,7 @@ function ProjectCards(props) {
           </Typography>
         </Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          <Typography sx={{ fontFamily: 'Orbitron' }}>
+          <Typography sx={{  fontFamily: 'Inter, sans-serif' }}>
             {props.description}
           </Typography>
         </Card.Text>
@@ -25,7 +25,7 @@ function ProjectCards(props) {
         justifyContent="center" 
         style={{ padding: '10px' }}>
           <Button variant="primary" href={props.ghLink} target="_blank" style={{ marginTop: '10px' }}>
-            <Typography sx={{ fontFamily: 'Orbitron' }}>
+            <Typography sx={{  fontFamily: 'Inter, sans-serif' }}>
               <BsGithub /> &nbsp;
               {props.isBlog ? "Blog" : "GitHub"}
             </Typography>
@@ -38,7 +38,7 @@ function ProjectCards(props) {
               target="_blank"
               style={{ marginLeft: "15px", marginTop: '10px' }}
             >
-              <Typography sx={{ fontFamily: 'Orbitron' }}>
+              <Typography sx={{  fontFamily: 'Inter, sans-serif' }}>
                 <CgWebsite /> &nbsp;
                 {"Demo"}
               </Typography>
