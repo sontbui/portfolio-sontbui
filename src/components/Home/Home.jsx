@@ -17,7 +17,7 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <Typography style={{ paddingBottom: 15, fontFamily: "Orbitron" }} className="heading">
+              <Typography style={{ paddingBottom: 15, fontFamily: 'Inter, sans-serif' }} className="heading">
                 {t('home.hello')}{" "}
                 <Typography variant="h7">
                   <span className="wave" role="img" aria-labelledby="wave">
@@ -34,11 +34,11 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Box>
-                  <Typography variant="h5" style={{ fontFamily: "Orbitron", marginRight: '10px', fontStyle:'italic' }}>
+                  <Typography variant="h5" style={{ fontFamily: 'Inter, sans-serif', marginRight: '10px', fontStyle:'italic' }}>
                     <strong>{t('home.careerPath')}</strong>
                   </Typography>
                 </Box>
-                <Typography style={{ fontFamily: "Orbitron", display: "inline-flex", alignItems: "center" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif', display: "inline-flex", alignItems: "center" }}>
                   <Type />
                 </Typography>
               </div>

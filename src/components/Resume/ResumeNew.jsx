@@ -37,7 +37,7 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <Typography sx={{ fontFamily: "Orbitron" }}>
+            <Typography sx={{ fontFamily: 'Inter, sans-serif' }}>
               <AiOutlineDownload /> &nbsp;
               {t('resume.download')}
             </Typography>

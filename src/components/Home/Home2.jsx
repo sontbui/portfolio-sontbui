@@ -21,12 +21,12 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <Typography style={{ fontFamily: "Orbitron", fontSize: "2.6em" }}>
+            <Typography style={{ fontFamily: 'Inter, sans-serif', fontSize: "2.6em" }}>
              {t('home.letme')}
               <span className="purple"> {t('home.intro')}</span> 
               {t('home.myself')}
             </Typography>
-            <Typography className="home-about-body" style={{ fontFamily: "Orbitron" }}>
+            <Typography className="home-about-body" style={{ fontFamily: 'Inter, sans-serif' }}>
             {t('home.haveSkill')}
             <span className="purple">
             {t('home.skill')}
@@ -36,7 +36,7 @@ function Home2() {
             {t('home.tool')}
               </span>
             </Typography>
-            <Typography className="home-about-body" style={{ fontFamily: "Orbitron", fontStyle:'italic' }}>
+            <Typography className="home-about-body" style={{ fontFamily: 'Inter, sans-serif', fontStyle:'italic' }}>
             <strong>
             {t('home.passionate')}
               </strong>
@@ -52,10 +52,10 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <Typography variant="h5" style={{ fontFamily: "Orbitron" }}>
+            <Typography variant="h5" style={{ fontFamily: 'Inter, sans-serif' }}>
             {t('home.contact')}
               </Typography>
-            <Typography style={{ fontFamily: "Orbitron" }}>
+            <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
             {t('home.feelFree')} 
             <span className="purple">
             {t('home.connect')}
