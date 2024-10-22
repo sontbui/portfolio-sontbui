@@ -18,7 +18,8 @@ i18n.use(initReactI18next).init({
 
 function language() {
   const storageData = localStorage.getItem('language');
-  if (!storageData) return 'vi';
+  if (!storageData) return 'vi'; // Ngôn ngữ mặc định
   return JSON.parse(storageData);
 }
+
 export default i18n;

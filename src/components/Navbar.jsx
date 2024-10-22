@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 // import { ImBlog } from "react-icons/im";
+import LanguageSetion from "../layout/LanguageSection/index";
 import { Typography } from '@mui/material';
 import {
   AiFillStar,
@@ -15,11 +16,13 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { useTranslation } from "react-i18next";
 // import LanguageSection from "../layout/languageSection";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const {t} = useTranslation();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -42,7 +45,7 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" 
           style={{ width: '100%', height: 'auto' }}/> */}
-          <Typography style={{ fontFamily: "Orbitron", fontStyle: 'italic' }}>
+          <Typography style={{ fontFamily: 'Inter, sans-serif', fontStyle: 'italic' }}>
             SONTBUI
           </Typography>
         </Navbar.Brand>
@@ -60,8 +63,8 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <Typography style={{ fontFamily: "Orbitron" }}>
-                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('header.home')}
                 </Typography>
               </Nav.Link>
             </Nav.Item>
@@ -72,8 +75,9 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
-                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <AiOutlineUser style={{ marginBottom: "2px" }} /> 
+                  {t('header.about')}
                 </Typography>
               </Nav.Link>
             </Nav.Item>
@@ -84,11 +88,11 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <AiOutlineFundProjectionScreen
                     style={{ marginBottom: "2px" }}
                   />{" "}
-                  Projects
+                 {t('header.project')}
                 </Typography>
               </Nav.Link>
             </Nav.Item>
@@ -99,8 +103,8 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
-                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> {t('header.resume')}
                 </Typography>
               </Nav.Link>
             </Nav.Item>
@@ -111,7 +115,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Typography style={{ fontFamily: "Orbitron" }}>
+                <Typography style={{ fontFamily: 'Inter, sans-serif' }}>
                   <ImBlog style={{ marginBottom: "2px" }} /> Blogs
                 </Typography>
               </Nav.Link>
@@ -127,9 +131,10 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
-            {/* <Nav.Item className="fork-btn">
-              <LanguageSection/>
-            </Nav.Item> */}
+            
+            <Nav.Item className="fork-btn">
+              <LanguageSetion />
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

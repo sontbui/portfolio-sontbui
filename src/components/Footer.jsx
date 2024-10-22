@@ -7,25 +7,32 @@ import {
 } from "react-icons/ai";
 import {Typography} from "@mui/material";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const {t} = useTranslation();
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <Typography variant="h3" style={{fontFamily: "Orbitron" }}>DEVELOP BY SONTBUI</Typography>
+          <Typography variant="h3" style={{fontFamily: 'Inter, sans-serif' }}>
+            {t('footer.developBy')}
+            
+            </Typography>
         </Col>
         <Col md="4" className="footer-copywright">
-        <Typography variant="h3" style={{fontFamily: "Orbitron" }}>Copyright © {year} SB</Typography>
+        <Typography variant="h3" style={{fontFamily: 'Inter, sans-serif' }}>
+          {/* {t('footer.copyRight')} © {year} SB */}
+          </Typography>
           
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/sontbui"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -33,19 +40,10 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
+            
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
+                href="https://www.linkedin.com/in/sontbui2783/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -55,7 +53,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/soumyajit4419"
+                href="https://www.instagram.com/sontbui/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

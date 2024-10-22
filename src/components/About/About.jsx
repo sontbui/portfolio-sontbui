@@ -7,8 +7,10 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const {t} = useTranslation();
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -22,8 +24,9 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <Typography variant="h4" sx={{ fontFamily: "Orbitron", fontSize: "2.1em", fontWeight: 600 }}>
-              Know Who <strong className="purple">I'M</strong>
+            <Typography variant="h4" sx={{ fontFamily: 'Inter, sans-serif', fontSize: "2.1em", fontWeight: 600 }}>
+              {t('about.know')}
+              <strong className="purple">{t('about.im')}</strong>
             </Typography>
             <Aboutcard />
           </Col>
@@ -37,14 +40,14 @@ function About() {
         </Row>
 
         <Typography variant="h4" sx={{fontFamily:'Orbitron'}} className="project-heading">
-          <strong className="purple">Skillset </strong>
+          <strong className="purple">{t('about.skillSet')} </strong>
         </Typography>
         <Techstack />
           
         <Typography variant="h4" sx={{fontFamily:'Orbitron'}} className="project-heading">
-        <strong className="purple">Tools</strong> I use
+        <strong className="purple">{t('about.tool')}</strong> 
+        {t('about.iUse')}
         </Typography>
-       
         <Toolstack />
 
         <Github />
